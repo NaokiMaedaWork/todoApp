@@ -1,0 +1,22 @@
+/*
+    todo.css
+*/
+
+
+/* TodoList */
+#todo-box{
+    width: 50%;
+}
+.todo-list{
+    padding-left: 0px;
+}
+.todo-item{
+    list-style: none;
+    padding-left: 0px;
+}
+.todo-large-font{
+    font-size: large;
+}
+#todo-add-item{
+    width: 100%;
+}

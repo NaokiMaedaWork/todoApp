@@ -21,9 +21,11 @@ class DisplayDate extends React.Component {
   }
   render(){
     return (
-        <div className="current_date">{
+      <div className="w3-container w3-center w3-padding-64">
+        <div className="w3-tag w3-wide todo-large-font">{
           this.state.currentDate.toLocaleString("Ja")}
         </div>
+      </div>
     )
   }
 }
