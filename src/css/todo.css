@@ -4,6 +4,9 @@
 
 
 /* TodoList */
+.todo-large-font{
+    font-size: large;
+}
 #todo-box{
     width: 50%;
 }
@@ -14,9 +17,23 @@
     list-style: none;
     padding-left: 0px;
 }
-.todo-large-font{
-    font-size: large;
-}
 #todo-add-item{
     width: 100%;
+}
+.todo-over-view{
+    margin-left: 5%;
+    height: 60px;
+    width: 85%;
+}
+.todo-status-button{
+    height: 60px;
+    width: 10%;
+}
+.todo-check-mark{
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #25AF01;
+    border-bottom: 2px solid #25AF01;
+    transform: rotate(-45deg);
 }
