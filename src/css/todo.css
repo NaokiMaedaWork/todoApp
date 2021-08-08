@@ -21,19 +21,19 @@
     width: 100%;
 }
 .todo-over-view{
-    margin-left: 5%;
     height: 60px;
-    width: 85%;
+    width: 80%;
 }
 .todo-status-button{
     height: 60px;
     width: 10%;
 }
-.todo-check-mark{
-    content: '';
-    width: 10px;
-    height: 5px;
-    border-left: 2px solid #25AF01;
-    border-bottom: 2px solid #25AF01;
-    transform: rotate(-45deg);
+.todo-remove-item {
+    height: 60px;
+    width: 60px;
+    background-image: url("../img/icons/delete_black_24dp.svg");
+    background-repeat: no-repeat;
+}
+#todo-remove-item-image {
+    
 }
