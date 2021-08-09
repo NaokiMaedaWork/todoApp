@@ -26,6 +26,11 @@ class TodoList extends React.Component {
     currentItems[index].checked = !currentItems[index].checked;
     this.setState({items: currentItems});
   }
+  changeOverView = (e,index) =>{
+    let currentItems = [...this.state.items];
+    currentItems[index].overview = e.target.value;
+    this.setState({items: currentItems});
+  }
   removeItem = () => {
     let currentItems = [...this.state.items];
 
@@ -47,7 +52,7 @@ class TodoList extends React.Component {
       return (
         <li className="todo-item w3-row w3-padding-16" key={index}>
             <input type="checkbox" className="todo-status-button w3-col" checked={item.checked} onChange={() => this.changeItemStatus(index)}></input>
-            <input type="text" name="overview" className="todo-over-view w3-input w3-col w3-border"></input>
+            <input type="text" name="overview" value={item.overview} className="todo-over-view w3-input w3-col w3-border" onChange={(e) => this.changeOverView(e,index)}></input>
         </li>
       )
     })
